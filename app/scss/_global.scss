@@ -1,0 +1,59 @@
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul,
+ol,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+    font-size: inherit;
+}
+p{
+    margin: 0;
+}
+body{
+    min-width: 320px;
+    overflow-x: hidden;
+    position: relative;
+    color: #fff;
+    @extend %gilroy-regular;
+    font-size: 16px;
+    background: #fff;
+    letter-spacing: 0.2px;
+}
+.container{
+    max-width: 1280px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.title{
+    @extend %gilroy-regular;
+    font-size: 18px;
+    letter-spacing: 9.7px;
+    color: #FF9900;
+    text-transform: uppercase;
+}
+.questions, .phase__num{
+    @extend %pfDisplay-regular;
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+    color: #000;
+}
